@@ -1,0 +1,31 @@
+<template name="frpzwho">
+	<div class="table-responsive">
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>User</th>
+					<th>Page</th>
+					<th>IP</th>
+					<th>Connection Date</th>
+					<th>Agent</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each frpzWho}}
+					<tr>
+						{{#if user}}
+						<td>{{{moimeme}}} {{user.username}} ({{user.emails.[0].address}})</td>
+						{{else}}
+						<td>{{{moimeme}}} <i>no user</i></td>
+						{{/if}}
+						<td><a href="{{page}}">{{page}}</a></td>
+						<td>{{ip}}</td>
+						<td>{{when}}</td>
+						<td>{{agent}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>
+
