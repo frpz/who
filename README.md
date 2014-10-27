@@ -65,7 +65,9 @@ Meteor.startup(function () {
   Meteor.frpzWhoLog = true;
 });
 ```
+
 ###Iron:router
+
 If the package **iron:router** is installed, it will automatically update the "page" section.
 
 ##Notes
