@@ -8,8 +8,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.use('standard-app-packages');
   api.use('accounts-password',{weak: true});
-  api.use('iron:router',{weak: true});
-  api.versionsFrom('0.9.0');
+  api.use('iron:router@0.9.4',{weak: true});
+  api.versionsFrom('METEOR@0.9.0');
   api.export("frpzWho");
   api.addFiles('frpz:who.html', 'client');
   api.addFiles('frpz:who-client.js', 'client');
