@@ -50,7 +50,7 @@ Avalables fields are:
 
 ###Display
 
-You can use the included template:
+You can use the template included:
 ```
 {{> frpzwho}}
 ```
