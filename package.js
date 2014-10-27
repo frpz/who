@@ -1,7 +1,8 @@
 Package.describe({
   name: 'frpz:who',
-  summary: ' Update a collection with the list of users currently connected to your page. It shows registrerd and unregistred users. ',
-  version: '0.1.0'
+  summary: "Allows you to see who's on your Meteor app",
+  version: '0.1.0',
+  git: "https://github.com/frpz/who.git"
 });
 
 Package.onUse(function(api) {
