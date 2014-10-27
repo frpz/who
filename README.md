@@ -10,7 +10,7 @@ meteor add frpz:who
 
 ##Usage
 
-###Acessing the data
+###Accessing the data
 
 First you have to publish the collection **frpzWho** on the server:
 ```javascript
