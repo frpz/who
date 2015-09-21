@@ -1,16 +1,18 @@
 frpz:who
 ========
 
+#Description
 This is a [Meteor](http://meteor.com) package that allows you to see who's on your Meteor app.
-##Install
+
+#Install
 Installation is as usual:
 ```sh
 meteor add frpz:who
 ```
 
-##Usage
+#Usage
 
-###Accessing the data
+##Accessing the data
 
 First you have to publish the collection **frpzWho** on the server:
 ```javascript
@@ -48,7 +50,7 @@ Avalables fields are:
 - page: uri as shown by iron:router
 - httpHeaders: headers received by the *Meteor.onConnection* function.
 
-###Display
+##Display
 
 You can use the template included:
 ```
@@ -57,7 +59,7 @@ You can use the template included:
 
 or you can use your own and access **frpzWho** collection directly.
 
-###Log
+##Log
 
 You can turn on the logs with this (on server and client):
 ```javascript
@@ -66,9 +68,9 @@ Meteor.startup(function () {
 });
 ```
 
-###Iron:router
+##Iron:router
 
 If the package **iron:router** is installed, it will automatically update the "page" section.
 
-##Notes
+#Notes
 This is my first Meteor package, so don't hesitate if you have advice, or any requests.
