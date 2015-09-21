@@ -16,7 +16,8 @@ Deps.autorun(function(){
 	if(Meteor.status().connected){
 		if(Meteor.frpzWhoLog) console.log("frpzWho: Monitoring status connect...");
 		Meteor.call("addUserToConnexions");
-		if(typeof Router != "undefined" && Router.current()) Meteor.call("changeRoute",Router.current().path, "Deps Connected");
+		//if(typeof Router != "undefined" && Router.current()) Meteor.call("changeRoute",Router.current().path, "Deps Connected");
+		if(typeof Iron != "undefined" && Iron.Location) Meteor.call("changeRoute",Iron.Location.get().path, "Deps Connected");
 	}
 });
 

@@ -1,18 +1,17 @@
 frpz:who
 ========
 
-#Description
 This is a [Meteor](http://meteor.com) package that allows you to see who's on your Meteor app.
 
-#Install
+# Install
 Installation is as usual:
 ```sh
 meteor add frpz:who
 ```
 
-#Usage
+# Usage
 
-##Accessing the data
+## Accessing the data
 
 First you have to publish the collection **frpzWho** on the server:
 ```javascript
