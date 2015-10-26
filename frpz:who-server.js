@@ -48,7 +48,7 @@ Meteor.methods({
 	addUserToConnexions: function(){
 		var id = this.connection.id;
 		if(typeof Meteor.user != 'undefined' && Meteor.user()){
-			if(Meteor.frpzWhoLog) console.log("frpzWho: Add User [ %s ] to session [ %s ]",typeof Meteor.user().username == 'undefined' ? Meteor.user().emails[0].address : Meteor.user().username, id);
+			if(Meteor.frpzWhoLog) console.log("frpzWho: Add User [ %s ] to session [ %s ]",typeof Meteor.user().username == 'undefined' ? ( Meteor.user().emails ? Meteor.user().emails[0].address : "" ) : Meteor.user().username, id);
 			frpzWho.update({_id:id},{$set: {user: Meteor.user()}});
 		}else{
 			if(Meteor.frpzWhoLog) console.log("frpzWho: Add User: No user to add to session [ %s ]",id);

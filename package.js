@@ -1,7 +1,7 @@
 Package.describe({
   name: 'frpz:who',
   summary: "Allows you to see who's on your Meteor app",
-  version: '0.1.2',
+  version: '0.1.3',
   git: "https://github.com/frpz/who.git"
 });
 
